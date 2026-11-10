@@ -32,4 +32,6 @@ venv/
 setup_synopsys_eda.tcsh
 setup_synopsys_eda.sh
 *.rc
+
+logs/
 *.log
