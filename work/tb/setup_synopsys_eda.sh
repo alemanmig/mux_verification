@@ -1,0 +1,1 @@
+/home/maleman/Documentos/alemanmig/mux_verification/verification/directed/scripts/setup/setup_synopsys_eda.sh

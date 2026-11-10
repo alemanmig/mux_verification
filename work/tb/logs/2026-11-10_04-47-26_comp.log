@@ -1,0 +1,15 @@
+Command: vcs -full64 -sverilog -lca -debug_access+all -kdb -timescale=1ns/100ps -F \
+/home/maleman/Documentos/alemanmig/mux_verification/rtl/rtl.f -F /home/maleman/Documentos/alemanmig/mux_verification/verification/directed/sve.f \
+-l /home/maleman/Documentos/alemanmig/mux_verification/work/tb/logs/2026-11-10_04-47-26_comp.log \
+-top tb -j8 +define+GIT_DIR=\"/home/maleman/Documentos/alemanmig/mux_verification/verification/directed\" \
++define+ERROR1_VERSION -cm line+cond+fsm+branch+tgl+assert -cm_dir /home/maleman/Documentos/alemanmig/mux_verification/work/tb/sim/simv_cov \
+-assert enable_diag+enable_hier /home/maleman/Documentos/alemanmig/mux_verification/verification/directed/dpi/dpi.cpp \
+
+
+Error-[P1ARGS-CANTOPN-F] Cannot open file
+  Unable to open 
+  '/home/maleman/Documentos/alemanmig/mux_verification/rtl/rtl.f' due to 'No 
+  such file or directory'.
+  Please fix the reason mentioned above and continue.
+
+CPU time: .104 seconds to compile

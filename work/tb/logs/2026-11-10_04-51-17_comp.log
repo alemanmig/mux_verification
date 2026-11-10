@@ -1,0 +1,62 @@
+Command: vcs -full64 -sverilog -lca -debug_access+all -kdb -timescale=1ns/100ps /home/maleman/Documentos/alemanmig/mux_verification/rtl/mux.sv \
+-F /home/maleman/Documentos/alemanmig/mux_verification/verification/directed/sve.f \
+-l /home/maleman/Documentos/alemanmig/mux_verification/work/tb/logs/2026-11-10_04-51-17_comp.log \
+-top tb -j8 +define+GIT_DIR=\"/home/maleman/Documentos/alemanmig/mux_verification/verification/directed\" \
++define+ERROR1_VERSION -cm line+cond+fsm+branch+tgl+assert -cm_dir /home/maleman/Documentos/alemanmig/mux_verification/work/tb/sim/simv_cov \
+-assert enable_diag+enable_hier /home/maleman/Documentos/alemanmig/mux_verification/verification/directed/dpi/dpi.cpp \
+
+                         Chronologic VCS (TM)
+      Version X-2025.06-SP1-1_Full64 -- Tue Nov 10 04:51:18 2026
+
+                    Copyright (c) 1991 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS Release Notes
+
+Parsing design file '/home/maleman/Documentos/alemanmig/mux_verification/rtl/mux.sv'
+Parsing design file '/home/maleman/Documentos/alemanmig/mux_verification/verification/directed/sv/vif_if.sv'
+
+Error-[SV-LCM-PND] Package not defined
+/home/maleman/Documentos/alemanmig/mux_verification/verification/directed/sv/vif_if.sv, 7
+$unit, "lagarto_pkg::"
+  Package scope resolution failed. Token 'lagarto_pkg' is not a package. 
+  Originating module '$unit'.
+  Move package definition before the use of the package.
+
+
+Error-[IND] Identifier not declared
+/home/maleman/Documentos/alemanmig/mux_verification/verification/directed/sv/vif_if.sv, 18
+  Identifier 'WIDTH' has not been declared yet. If this error is not expected,
+  please check if you have set `default_nettype to none.
+  
+
+Parsing design file '/home/maleman/Documentos/alemanmig/mux_verification/verification/directed/tests/test.sv'
+
+Error-[SE] Syntax error
+  Following verilog source has syntax error :
+  "/home/maleman/Documentos/alemanmig/mux_verification/verification/directed/tests/test.sv",
+  2: token is 'localparam'
+      localparam WIDTH = 32;
+                ^
+  Verilog  keyword 'localparam' is not expected to be used in this context.
+
+1 warning
+3 errors
+CPU time: .165 seconds to compile
