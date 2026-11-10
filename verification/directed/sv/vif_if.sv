@@ -5,15 +5,16 @@
 //
 //--------------------------------------
 
-interface vif_if(
-
+interface vif_if #(
+    parameter int WIDTH = 32
+)(
     input logic Clk_i
-); 
+);
 
   timeunit      1ns;
   timeprecision 100ps;
 
-  
+
   logic [WIDTH-1:0] in0;
   logic [WIDTH-1:0] in1;
   logic [WIDTH-1:0] in2;
