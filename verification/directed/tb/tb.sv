@@ -67,6 +67,22 @@ module tb;
         .out(vif.out)
     );
 
+    //-----------------------------------------
+    // Functional Coverage
+    //-----------------------------------------
+
+    mux5_cov #(
+        .WIDTH(WIDTH)
+    ) u_mux5_cov (
+        .clk(clk),
+        .in0(vif.in0),
+        .in1(vif.in1),
+        .in2(vif.in2),
+        .in3(vif.in3),
+        .in4(vif.in4),
+        .sel(vif.sel),
+        .out(vif.out)
+    );
 
 endmodule
 
