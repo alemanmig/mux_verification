@@ -29,6 +29,8 @@ module mux5_cov #(
             bins non_zero = {0};
         }
 
+        sel_x_out : cross cp_sel, cp_out_zero;
+
     endgroup
 
     mux5_cg cg = new();
